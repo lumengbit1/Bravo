@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './css/style.css';
 import Header from './components/Header'
-import Content from './components/Content'
+import Footer from './components/Footer'
 
 class App extends Component {
 	render() {
@@ -11,7 +11,7 @@ class App extends Component {
 					<p>Bravo</p>
 				</header> */}
 				<Header />
-				<Content />
+				<Footer />
 			</div>
 		);
 	}
