@@ -43,7 +43,7 @@ class Header extends Component{
                         <a><NavLink exact to='/About MXDC'>About MXDC</NavLink></a>
                         <a><NavLink exact to='/Contact us'>Contact us</NavLink></a>
                     </div>
-                    <img className='mobileicon' src={require('./../../images/menu_icon.svg')} onClick={this.display_on} style={document.body.clientWidth>480 ?{display:'none'}:{ display: this.state.logo }}/>
+                    <img className='mobileicon' src={require('./../../images/menu_icon.svg')} alt='mobileicon' onClick={this.display_on} style={document.body.clientWidth>480 ?{display:'none'}:{ display: this.state.logo }}/>
                     <div className='mobilemenu' style={{ display: this.state.display }}>
                         <div className='maskheader'>
                             <img src={require('./../../images/logo.svg')} alt="logo" />
