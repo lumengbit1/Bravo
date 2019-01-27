@@ -8,7 +8,7 @@ export const initListAction=(jsondata)=>({
 
 export const getEventList=()=>{
     return (dispatch)=>{
-        fetch('https://s3-ap-southeast-2.amazonaws.com/studiobravo/FED+Project/events.json')
+         return fetch('https://s3-ap-southeast-2.amazonaws.com/studiobravo/FED+Project/events.json')
             .then((res)=>{
                 return res.json();       
             }).then((json)=>{

@@ -19,7 +19,6 @@ class Content extends Component{
             <div className='content'>
                 {content!=null?
                     content.map((item)=>{
-                        console.log(item.title)
                         return(
                             <div>
                                 <img src={item.imgUrlDesktop} srcset={`${item.imgUrlDesktop} 769w,${item.imgUrlDesktop2x} 1538w,${item.imgUrlMobile} 480w,${item.imgUrlMobile2x} 960w`}
