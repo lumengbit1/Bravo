@@ -33,6 +33,20 @@ code {
 .navtext a:hover {
   color: whitesmoke;
 }
+@media screen and (max-width: 480px) {
+  .navtext {
+    display: none;
+  }
+}
+.mobileicon {
+  display: none;
+}
+@media screen and (max-width: 480px) {
+  .mobileicon {
+    display: block ;
+    margin-right: 2rem;
+  }
+}
 .headerpicture {
   background-image: url('../images/Desktop_header.png');
   background: -webkit-image-set(url('../images/Desktop_header.png') 1x, url('../images/Desktop_header@2x.png') 2x);
@@ -266,4 +280,37 @@ code {
   .footertext a {
     margin: 0.3rem;
   }
+}
+.mobilemenu {
+  background: #132925;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 20;
+  filter: alpha(opacity=60);
+  opacity: 0.9 !important;
+}
+.maskheader {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+}
+.mobilemenutext {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+}
+.mobilemenutext a {
+  color: #47c7aa;
+  font-size: 2rem;
+  text-decoration: none;
+  margin: 1rem;
+}
+.mobilemenutext a:hover {
+  color: whitesmoke;
 }

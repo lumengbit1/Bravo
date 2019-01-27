@@ -5,13 +5,7 @@ import {getEventList} from './../../reducers/actions'
 
 
 class Content extends Component{
-    constructor(props) {
-        super(props);
-        this.state = {
-        //   content:[],
-        };
 
-      }
 
     componentDidMount(){
         const {onfetchData} = this.props;
@@ -29,12 +23,12 @@ class Content extends Component{
                         return(
                             <div>
                                 <img src={item.imgUrlDesktop} srcset={`${item.imgUrlDesktop} 769w,${item.imgUrlDesktop2x} 1538w,${item.imgUrlMobile} 480w,${item.imgUrlMobile2x} 960w`}
-                                sizes='(max-width: 480px) 480px, 769px'/>
+                                sizes='(max-width: 480px) 480px, 769px' alt='contentimg'/>
                                 <div>
                                     <h1>{item.title}</h1>
                                     <p>{item.description}</p>
                                 </div>
-                                <img className='arrow' src={require('./../../images/right_chevron.svg')}/>
+                                <img className='arrow' src={require('./../../images/right_chevron.svg')} alt='arrow'/>
                             </div>
                         )
                     }) :''
