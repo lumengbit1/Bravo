@@ -1,0 +1,243 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SampleComponent should render 1`] = `
+<div>
+  <div
+    className="App"
+  >
+    <div>
+      <div
+        className="header"
+      >
+        <a
+          aria-current="page"
+          className="active"
+          href="/"
+          onClick={[Function]}
+          style={Object {}}
+        >
+          <img
+            alt="logo"
+            src={
+              Object {
+                "ReactComponent": [Function],
+                "__esModule": true,
+                "default": "logo.svg",
+              }
+            }
+            style={
+              Object {
+                "display": "block",
+              }
+            }
+          />
+        </a>
+        <div
+          className="navtext"
+        >
+          <a>
+            <a
+              aria-current={null}
+              href="/Program"
+              onClick={[Function]}
+            >
+              Program
+            </a>
+          </a>
+          <a>
+            <a
+              aria-current={null}
+              href="/Partners"
+              onClick={[Function]}
+            >
+              Partners
+            </a>
+          </a>
+          <a>
+            <a
+              aria-current={null}
+              href="/Locations"
+              onClick={[Function]}
+            >
+              Locations
+            </a>
+          </a>
+          <a>
+            <a
+              aria-current={null}
+              href="/AboutMXDC"
+              onClick={[Function]}
+            >
+              About MXDC
+            </a>
+          </a>
+          <a>
+            <a
+              aria-current={null}
+              href="/Contactus"
+              onClick={[Function]}
+            >
+              Contact us
+            </a>
+          </a>
+        </div>
+        <img
+          alt="mobileicon"
+          className="mobileicon"
+          onClick={[Function]}
+          src={
+            Object {
+              "ReactComponent": [Function],
+              "__esModule": true,
+              "default": "menu_icon.svg",
+            }
+          }
+          style={
+            Object {
+              "display": "block",
+            }
+          }
+        />
+        <div
+          className="mobilemenu"
+          style={
+            Object {
+              "display": "none",
+            }
+          }
+        >
+          <div
+            className="maskheader"
+          >
+            <a
+              aria-current="page"
+              className="active"
+              href="/"
+              onClick={[Function]}
+              style={Object {}}
+            >
+              <img
+                alt="logo"
+                src={
+                  Object {
+                    "ReactComponent": [Function],
+                    "__esModule": true,
+                    "default": "logo.svg",
+                  }
+                }
+              />
+            </a>
+            <img
+              alt="close"
+              onClick={[Function]}
+              src={
+                Object {
+                  "ReactComponent": [Function],
+                  "__esModule": true,
+                  "default": "close_icon.svg",
+                }
+              }
+            />
+          </div>
+          <div
+            className="mobilemenutext"
+          >
+            <a>
+              <a
+                aria-current={null}
+                href="/Program"
+                onClick={[Function]}
+              >
+                Program
+              </a>
+            </a>
+            <a>
+              <a
+                aria-current={null}
+                href="/Partners"
+                onClick={[Function]}
+              >
+                Partners
+              </a>
+            </a>
+            <a>
+              <a
+                aria-current={null}
+                href="/Locations"
+                onClick={[Function]}
+              >
+                Locations
+              </a>
+            </a>
+            <a>
+              <a
+                aria-current={null}
+                href="/AboutMXDC"
+                onClick={[Function]}
+              >
+                About MXDC
+              </a>
+            </a>
+            <a>
+              <a
+                aria-current={null}
+                href="/Contactus"
+                onClick={[Function]}
+              >
+                Contact us
+              </a>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        className="headerpicture"
+      >
+        <h1>
+          MXDC Melbourne
+        </h1>
+        <h3>
+          June 20-27
+        </h3>
+      </div>
+    </div>
+    <div
+      className="content"
+    >
+      
+    </div>
+    <div>
+      <div
+        className="footer"
+      >
+        <img
+          alt="logo"
+          src={
+            Object {
+              "ReactComponent": [Function],
+              "__esModule": true,
+              "default": "logo.svg",
+            }
+          }
+        />
+        <div
+          className="footertext"
+        >
+          <a>
+            Privacy
+          </a>
+          <a>
+            Terms and Conditions
+          </a>
+          <a>
+            Frequently Asked Questions
+          </a>
+          <a>
+            Contact Us
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

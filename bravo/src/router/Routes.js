@@ -19,7 +19,6 @@ const Root = () => (
                       <Route path='/Locations' component={Content} />
                       <Route path='/AboutMXDC' component={Content} />
                       <Route path='/Contactus' component={Content} />
-                      <Route render={() => <Redirect to="/" />} />
                    </Switch>
                 </App>
              )}

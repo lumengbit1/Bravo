@@ -11,7 +11,7 @@ class Header extends Component{
         }
       }
 
-      display_on=()=> { 
+    displayOn=()=> { 
             this.setState({
                 display: 'block',
                 logo:'none',
@@ -19,7 +19,7 @@ class Header extends Component{
 
 
     }
-    display_off=()=> { 
+    displayOff=()=> { 
         this.setState({
             display: 'none',
             logo:'block',
@@ -42,11 +42,11 @@ class Header extends Component{
                         <a><NavLink exact to='/AboutMXDC'>About MXDC</NavLink></a>
                         <a><NavLink exact to='/Contactus'>Contact us</NavLink></a>
                     </div>
-                    <img className='mobileicon' src={require('./../../images/menu_icon.svg')} alt='mobileicon' onClick={this.display_on} style={document.body.clientWidth>480 ?{display:'none'}:{ display: this.state.logo }}/>
+                    <img className='mobileicon' src={require('./../../images/menu_icon.svg')} alt='mobileicon' onClick={this.displayOn} style={document.body.clientWidth>480 ?{display:'none'}:{ display: this.state.logo }}/>
                     <div className='mobilemenu' style={{ display: this.state.display }}>
                         <div className='maskheader'>
-                            <img src={require('./../../images/logo.svg')} alt="logo" />
-                            <img src={require('./../../images/close_icon.svg')} alt="close" onClick={this.display_off} />
+                        <NavLink  exact to='/'><img src={require('./../../images/logo.svg')} alt="logo" /></NavLink>
+                            <img src={require('./../../images/close_icon.svg')} alt="close" onClick={this.displayOff} />
                         </div>
                         <div className='mobilemenutext'>
                             <a><NavLink exact to='/Program'>Program</NavLink></a>

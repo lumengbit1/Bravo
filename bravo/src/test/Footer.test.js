@@ -1,27 +1,29 @@
 import React from 'react'
 import Enzyme,{ configure, shallow,mount,render } from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
-import Header from './../components/Header'
+import Footer from '../components/Footer'
 import configureMockStore from 'redux-mock-store'
 import thunk from 'redux-thunk'
 import { Provider} from 'react-redux'
-import {BrowserRouter as Router} from 'react-router-dom'
-import sinon from 'sinon'
-
+import {BrowserRouter as Router} from 'react-router-dom';
 
 Enzyme.configure({ adapter: new Adapter() });
 
-  describe(`Test render`, () => {
-    const warpper = shallow(<Header />);
-    it('1. Include 4 <img>',()=>{
-        expect(warpper.find('img').length).toBe(4);
+describe(`Test render`, () => {
+    const warpper = shallow(<Footer />);
+    it('1. Include 1 <img>',()=>{
+        expect(warpper.find('img').length).toBe(1);
     })
 
-    it('2. Include 10 <a>', () => {
-        expect(warpper.find('a').length).toBe(10);
+    it('2. Include 4 <a>', () => {
+        expect(warpper.find('a').length).toBe(4);
+    })
+    it('3. Include 3 <div>',()=>{
+        expect(warpper.find('div').length).toBe(3);
     })
 
 })
+
 describe('render snapshop testing',()=>{
     it('renders correctly', () => {
         let wrapper, store;
@@ -31,7 +33,7 @@ describe('render snapshop testing',()=>{
         wrapper = render(
             <Provider store={store} >
                 <Router>
-                    <Header />
+                    <Footer />
                 </Router>
             </Provider>);
         
@@ -39,4 +41,3 @@ describe('render snapshop testing',()=>{
         expect(wrapper).toMatchSnapshot();
       });
 })
-
