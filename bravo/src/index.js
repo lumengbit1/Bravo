@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './css/style.css';
-import App from './App';
+import Root from './router/Routes'
 import {BrowserRouter as Router} from 'react-router-dom';
 import {createStore,applyMiddleware} from "redux";
 import eventList from "./reducers/reducer";
@@ -13,7 +13,7 @@ const store = createStore(eventList,applyMiddleware(thunk));
 ReactDOM.render(
     <Provider store={store}>
         <Router>
-            <App />
+            <Root />
         </Router>
     </Provider>, 
     document.getElementById('root')

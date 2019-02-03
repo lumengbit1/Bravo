@@ -35,13 +35,13 @@ class Header extends Component{
         return(
             <div>
                 <div className='header'>
-                    <img src={require('./../../images/logo.svg')} alt="logo" style={{ display: this.state.logo }}/>
+                    <NavLink  exact to='/'><img src={require('./../../images/logo.svg')} alt="logo" style={{ display: this.state.logo }}/></NavLink>
                     <div className='navtext'>
-                        <a><NavLink exact to='/'>Program</NavLink></a>
+                        <a><NavLink exact to='/Program'>Program</NavLink></a>
                         <a><NavLink exact to='/Partners'>Partners</NavLink></a>
                         <a><NavLink exact to='/Locations'>Locations</NavLink></a>
-                        <a><NavLink exact to='/About MXDC'>About MXDC</NavLink></a>
-                        <a><NavLink exact to='/Contact us'>Contact us</NavLink></a>
+                        <a><NavLink exact to='/AboutMXDC'>About MXDC</NavLink></a>
+                        <a><NavLink exact to='/Contactus'>Contact us</NavLink></a>
                     </div>
                     <img className='mobileicon' src={require('./../../images/menu_icon.svg')} alt='mobileicon' onClick={this.display_on} style={document.body.clientWidth>480 ?{display:'none'}:{ display: this.state.logo }}/>
                     <div className='mobilemenu' style={{ display: this.state.display }}>
@@ -50,11 +50,11 @@ class Header extends Component{
                             <img src={require('./../../images/close_icon.svg')} alt="close" onClick={this.display_off} />
                         </div>
                         <div className='mobilemenutext'>
-                            <a><NavLink exact to='/'>Program</NavLink></a>
+                            <a><NavLink exact to='/Program'>Program</NavLink></a>
                             <a><NavLink exact to='/Partners'>Partners</NavLink></a>
                             <a><NavLink exact to='/Locations'>Locations</NavLink></a>
-                            <a><NavLink exact to='/About MXDC'>About MXDC</NavLink></a>
-                            <a><NavLink exact to='/Contact us'>Contact us</NavLink></a>
+                            <a><NavLink exact to='/AboutMXDC'>About MXDC</NavLink></a>
+                            <a><NavLink exact to='/Contactus'>Contact us</NavLink></a>
                         </div>
                     </div>
                 </div>
@@ -62,9 +62,9 @@ class Header extends Component{
                     <h1>MXDC Melbourne</h1>
                     <h3>June 20-27</h3>
                 </div>              
-                <Switch>
+                {/* <Switch>
                     <Route exact path='/' component={Content}/>
-                </Switch>               
+                </Switch>                */}
             </div>
 
         )
