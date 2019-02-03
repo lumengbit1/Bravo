@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import './../../css/style.css';
-import Content from './../Content'
-import {Route,NavLink,Switch} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 
 class Header extends Component{
     constructor(props) {
